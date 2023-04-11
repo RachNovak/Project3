@@ -14,13 +14,13 @@ https://zenodo.org/record/7215364#.ZDSrF3bMJD9
 2. Back end (ETL)
 python
 pandas
-MongoDB -- this might be a data drvien, sql/sqlite might be better if data is not a JSON
+MongoDB -- this might be a data driven, sql/sqlite might be better if data is not a JSON
 
 Your visualization must include a python **Flask-powered API**, HTML/CSS, Javascript, and at leat one database (SQL, MongoDB, SQLite, etc.)
 reference: Week 10 > Day 3 > Activity 4
 
 Fall into one of the below four tracks:
-a combination of web scrpaing and Leftlet of Plotly; Plotly, but going to try Leaflet
+a combination of web scraping and Leaflet of Plotly; Plotly, but going to try Leaflet
 a dashboard page with mulitple charts that update from the same data
 
 Include at least one JS library that we did not cover 
