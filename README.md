@@ -5,20 +5,22 @@ The goal of this project is to tell a story using data visualizations.
 Interactivity should be built-in, allowing users to explore data on their own.
 Teams will also create a 10-minute presentation that lays out your theme, coding approach, data wrangling techniques, and final visualization
 
-// Five Project Requirements
-Data and data delivery
--- Emissions by type and country
+//Five Project Requirements
 
-Back end (ETL)
+1. Data and data delivery
+-- Emissions by type and country
 -- Kaggle, data.gov, etc
 
-Visualizations
+2. Back end (ETL)
+
+
+3. Visualizations
 --
 
-Group presentations
+4. Group presentations
 -- 
 
-Slide deck
+5. Slide deck
 -- [[https://docs.google.com/presentation/d/1gvJH5lXP84PoBj8aWUbTHneHJ4zMz_GsvPyWdCW3bXs/edit?usp=sharing]]
 
 //Emissions Data Visualization
