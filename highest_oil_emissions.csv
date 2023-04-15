@@ -1,0 +1,225 @@
+Country,Oil
+USA,52353.235484
+China,24557.651857
+Japan,11924.431232
+India,10332.57481
+Russia,7772.362995
+Saudi Arabia,6916.173625
+Germany,6323.770181
+Brazil,6218.64987
+Mexico,5766.0810870000005
+Canada,5641.511476
+Iran,5003.134846
+France,4716.079449
+Italy,4301.020894
+Indonesia,4233.073556
+South Korea,4009.815804
+United Kingdom,3962.414692
+Spain,3435.5574460000003
+Australia,2768.57305
+Thailand,2397.823429
+Iraq,2156.394027
+Turkey,2095.958633
+Egypt,2032.4913689999998
+Venezuela,1977.912664
+Argentina,1706.38664
+Taiwan,1674.619664
+Malaysia,1593.753246
+Poland,1505.644128
+Pakistan,1354.3226730000001
+Netherlands,1217.571567
+South Africa,1129.893521
+Belgium,1129.150023
+Nigeria,1079.574454
+Kuwait,1069.757521
+Viet Nam,1022.199602
+United Arab Emirates,1021.89695
+Philippines,1011.201877
+Algeria,972.197513
+Kazakhstan,962.821338
+Greece,930.765963
+Chile,906.270415
+Colombia,823.837317
+Ukraine,816.94462
+Austria,763.471285
+Sweden,754.289834
+Libya,741.6981969999999
+Switzerland,711.551267
+Portugal,695.893408
+Syria,677.574879
+Morocco,670.597245
+Ecuador,642.16044
+Singapore,635.222138
+Romania,618.967714
+Israel,556.541341
+Peru,543.680512
+Finland,528.334035
+Norway,517.134984
+Cuba,515.349257
+Denmark,480.64968500000003
+Czech Republic,469.723141
+Ireland,464.308808
+New Zealand,411.027774
+Lebanon,395.688823
+Belarus,382.35735
+Turkmenistan,378.035318
+Hungary,366.78491
+Dominican Republic,364.234565
+Jordan,347.579643
+Yemen,341.303502
+Sudan,300.65776
+Uzbekistan,291.88693
+Bangladesh,287.558058
+Sri Lanka,274.186118
+Tunisia,269.8941
+Azerbaijan,261.232641
+Hong Kong,258.399754
+Bulgaria,255.713178
+Oman,254.460202
+Angola,252.148252
+Croatia,239.103872
+Qatar,227.002588
+Kenya,225.869388
+Guatemala,221.599736
+Serbia,215.110679
+Myanmar,206.086671
+Ghana,203.942133
+Slovakia,201.43308
+Bolivia,198.36047
+Jamaica,184.505167
+Panama,168.350808
+Honduras,167.131933
+Slovenia,160.037488
+Lithuania,159.281936
+Luxembourg,158.155723
+Ethiopia,157.44129
+Cyprus,146.81687
+Costa Rica,145.441118
+Uruguay,131.421356
+El Salvador,130.689488
+Paraguay,114.228381
+Senegal,111.873673
+Tanzania,110.024032
+Papua New Guinea,109.643089
+Côte d'Ivoire,106.893255
+Curaçao,105.481554
+Cambodia,104.164052
+Cameroon,101.749134
+Nicaragua,96.44977399999999
+Afghanistan,93.566782
+Trinidad and Tobago,92.85034
+Benin,92.285452
+Latvia,90.880965
+Bosnia and Herzegovina,87.57395199999999
+Bahrain,83.438255
+Nepal,80.865944
+Albania,76.907408
+Estonia,71.02536
+Uganda,70.133571
+Kyrgyzstan,69.792937
+North Korea,65.004707
+Mongolia,63.187421
+Zimbabwe,62.79079
+North Macedonia,61.277752
+Zambia,60.947857
+Mozambique,60.897716
+Namibia,59.66329
+Georgia,58.201816
+Iceland,56.56658
+Guinea,55.629821
+Mauritius,54.167146
+Botswana,53.623672
+Occupied Palestinian Territory,52.689866
+Burkina Faso,52.060493
+Réunion,50.875771
+Mali,50.528753
+New Caledonia,50.366532
+Mauritania,49.761636
+Martinique,48.970948
+Haiti,48.009642
+Malta,47.103171
+Suriname,47.042706
+Bahamas,46.986793
+Moldova,46.362324
+Laos,46.186406
+Guyana,43.582617
+Guadeloupe,43.34501
+Madagascar,43.113403
+Democratic Republic of the Congo,40.338932
+Gabon,40.301079
+Aruba,40.116408
+Brunei Darussalam,39.459348
+Tajikistan,39.402905
+Congo,34.503501
+Macao,30.145518
+South Sudan,27.177461
+Togo,27.061456
+Kosovo,26.125623
+Barbados,25.507881
+Fiji,24.173492
+Maldives,24.115134
+Equatorial Guinea,23.861874
+Niger,23.760818
+Chad,23.258792
+Armenia,19.868243
+Malawi,18.730324
+French Polynesia,17.947992
+Montenegro,17.190858
+Sierra Leone,17.000068
+Liberia,16.667159
+Rwanda,16.310234
+Swaziland,15.541911
+Faeroe Islands,14.786103
+Sint Maarten (Dutch part),14.309343
+French Guiana,14.282694
+Somalia,13.210222
+Greenland,13.153452
+Eritrea,13.085902
+Bermuda,12.575973
+Lesotho,11.693859
+Belize,11.282027
+Andorra,11.098684
+Cape Verde,11.028022
+Seychelles,9.815991
+Saint Lucia,9.782910000000001
+Gambia,9.718734
+Antigua and Barbuda,9.2957
+Djibouti,8.754544
+Bhutan,7.774585
+Burundi,7.150827
+Timor-Leste,6.910769
+Solomon Islands,6.537321
+Mayotte,5.739732
+Turks and Caicos Islands,5.69988
+Grenada,5.573554
+Guinea-Bissau,5.400454
+Saint Vincent and the Grenadines,4.808091
+Saint Kitts and Nevis,4.802817
+Palau,4.801315
+Central African Republic,4.435298
+Samoa,4.387137
+Comoros,3.907568
+British Virgin Islands,3.8675040000000003
+Dominica,3.354544
+Micronesia (Federated States of),3.065308
+Anguilla,2.936198
+Marshall Islands,2.885772
+Liechtenstein,2.862822
+Tonga,2.693633
+Vanuatu,2.547073
+Sao Tome and Principe,2.16532
+"Bonaire, Saint Eustatius and Saba",1.850879
+Cook Islands,1.448089
+Saint Pierre and Miquelon,1.386087
+Kiribati,1.233012
+Nauru,1.224145
+Montserrat,0.830872
+Wallis and Futuna Islands,0.571511
+Saint Helena,0.253466
+Tuvalu,0.20621
+Niue,0.155427
+Antarctica,0.047632
+Panama Canal Zone,0.0
+Puerto Rico,0.0
+St. Kitts-Nevis-Anguilla,0.0
+Christmas Island,0.0
