@@ -42,7 +42,7 @@ def welcome():
     f"/api/v1.0/oil<br/>"
     f"/api/v1.0/gas<br/>"
     f"/api/v1.0/cement<br/>"
-    f"/api/v1.0/Flaring<br/>"
+    f"/api/v1.0/flaring<br/>"
     )
 
 #Create function for total page
@@ -65,16 +65,40 @@ def coal():
     return coal.to_json()
 
 #Create function for oil page
-
+@app.route("/api/v1.0/oil")
+def oil():
+    conn = psycopg2.connect(conn_string)
+    
+    oil = pd.read_sql('select * from oil', conn)
+    
+    return oil.to_json()
 
 #Create function for gas page
-
+@app.route("/api/v1.0/gas")
+def gas():
+    conn = psycopg2.connect(conn_string)
+    
+    gas = pd.read_sql('select * from gas', conn)
+    
+    return gas.to_json()
 
 #Create function for cement page
-
+@app.route("/api/v1.0/cement")
+def cement():
+    conn = psycopg2.connect(conn_string)
+    
+    cement = pd.read_sql('select * from cement', conn)
+    
+    return cement.to_json()
 
 #Create function for flaring page
-
+@app.route("/api/v1.0/flaring")
+def flaring():
+    conn = psycopg2.connect(conn_string)
+    
+    flaring = pd.read_sql('select * from flaring', conn)
+    
+    return flaring.to_json()
 
 
 if __name__ == '__main__':
