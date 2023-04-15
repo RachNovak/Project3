@@ -31,14 +31,29 @@ data = pd.read_sql('select * from emissions', conn)
 # Flask Routes
 #################################################
 @app.route("/")
+# Create function for welcome page
 def welcome():
+    return(
+    
+    f"Welcome to the CO2 Emissions by Country API!<br/>"
+    f"Available Routes:<br/>"
+    f"/api/v1.0/totalemissions<br/>"
+    f"/api/v1.0/coal<br/>"
+    f"/api/v1.0/oil<br/>"
+    f"/api/v1.0/gas<br/>"
+    f"/api/v1.0/cement<br/>"
+    f"/api/v1.0/Flaring<br/>"
+    )
+
+
+@app.route("/api/v1.0/totalemissions")
+def total():
     
     conn = psycopg2.connect(conn_string)
     
     data = pd.read_sql('select * from emissions', conn)
     
     return data.to_json()
-
 
 
 if __name__ == '__main__':
