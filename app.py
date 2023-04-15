@@ -31,7 +31,7 @@ data = pd.read_sql('select * from emissions', conn)
 # Flask Routes
 #################################################
 @app.route("/")
-# Create function for welcome page
+#Create function for welcome page
 def welcome():
     return(
     
@@ -45,15 +45,36 @@ def welcome():
     f"/api/v1.0/Flaring<br/>"
     )
 
-
+#Create function for total page
 @app.route("/api/v1.0/totalemissions")
 def total():
     
     conn = psycopg2.connect(conn_string)
     
-    data = pd.read_sql('select * from emissions', conn)
+    total = pd.read_sql('select * from total', conn)
     
-    return data.to_json()
+    return total.to_json()
+
+#Create function for coal page
+@app.route("/api/v1.0/coal")
+def coal():
+    conn = psycopg2.connect(conn_string)
+    
+    coal = pd.read_sql('select * from coal', conn)
+    
+    return coal.to_json()
+
+#Create function for oil page
+
+
+#Create function for gas page
+
+
+#Create function for cement page
+
+
+#Create function for flaring page
+
 
 
 if __name__ == '__main__':
