@@ -3,7 +3,9 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import psycopg2
-from flask import Flask, jsonify, render_template, request, redirect, url_for
+import flask
+from flask import Flask
+from flask_cors import CORS
 import numpy as np
 import pandas as pd
 
@@ -11,7 +13,7 @@ import pandas as pd
 # Flask Setup
 #################################################
 app = Flask(__name__)
-
+CORS(app)
 
 ###############################################
 # Database Setup
