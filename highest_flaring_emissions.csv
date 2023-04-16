@@ -1,0 +1,225 @@
+Country,Flaring
+USA,1160.00664
+Russia,947.332335
+Iran,618.897368
+Nigeria,602.540203
+Iraq,424.304549
+Kazakhstan,361.160992
+Canada,345.02079
+Brazil,329.589
+Venezuela,310.235754
+Algeria,263.698829
+Australia,227.332045
+Mexico,207.858359
+Malaysia,173.443237
+Angola,173.102901
+Indonesia,137.216207
+Libya,126.952686
+United Kingdom,107.276093
+Poland,85.78105
+Oman,78.085593
+France,77.607893
+Qatar,64.55529
+Spain,64.357986
+Peru,60.264903000000004
+India,58.541290000000004
+Gabon,58.433167
+Germany,57.106186
+Italy,56.821189
+Equatorial Guinea,54.413207
+Ukraine,53.679606
+Egypt,46.661431
+Saudi Arabia,43.044689
+United Arab Emirates,37.936249
+China,37.87482
+Ecuador,36.195119
+Norway,36.17986
+Turkmenistan,33.137915
+Argentina,30.988566
+Syria,29.360116
+Congo,25.931235
+Azerbaijan,25.440347
+Kuwait,23.797388
+Colombia,22.632774
+New Zealand,22.383226999999998
+Netherlands,22.143109
+Uzbekistan,18.815661000000002
+Cameroon,17.841556
+Romania,17.721971
+Viet Nam,16.539527
+Portugal,16.219396
+Yemen,14.862096
+Sweden,14.129267
+Croatia,11.631043
+Tunisia,11.238182
+Brunei Darussalam,10.555286
+Pakistan,10.539298
+Japan,10.439636
+Bulgaria,8.622376
+Denmark,8.616981000000001
+Thailand,7.126291
+Sudan,6.984896
+Czech Republic,5.104034
+Trinidad and Tobago,4.242991
+Lithuania,4.017221
+Ghana,3.796095
+Bolivia,3.78475
+Austria,3.558146
+Iceland,3.477769
+Chad,3.477266
+Turkey,3.397586
+Slovenia,3.3007280000000003
+Hungary,3.269133
+Chile,2.898989
+Belgium,2.428285
+Timor-Leste,2.36687
+Philippines,2.309655
+Bahrain,2.01754
+Finland,1.781552
+Papua New Guinea,1.5276509999999999
+Côte d'Ivoire,1.2979880000000001
+Myanmar,1.013814
+Niger,0.98937
+Switzerland,0.857609
+Guatemala,0.8275939999999999
+Guyana,0.775218
+Cuba,0.764351
+Taiwan,0.695205
+Mauritania,0.521135
+South Africa,0.498332
+Slovakia,0.46928000000000003
+Bangladesh,0.282225
+Barbados,0.234512
+Mozambique,0.152617
+Greece,0.146121
+Belarus,0.139625
+Albania,0.136357
+Mongolia,0.113702
+Serbia,0.098944
+Ireland,0.064525
+Georgia,0.057293000000000004
+Tanzania,0.045488
+Afghanistan,0.043968
+Suriname,0.032976
+Cambodia,0.023707
+Jordan,0.012858999999999999
+Senegal,0.011355
+Occupied Palestinian Territory,0.010962
+Ethiopia,0.01066
+Israel,0.008234
+South Korea,0.006392
+Belize,0.006241999999999999
+Luxembourg,0.001217
+Estonia,0.001006
+Latvia,0.000174
+Uganda,0.0
+Palau,0.0
+Panama,0.0
+Panama Canal Zone,0.0
+Wallis and Futuna Islands,0.0
+Uruguay,0.0
+Turks and Caicos Islands,0.0
+Vanuatu,0.0
+Paraguay,0.0
+Tonga,0.0
+Togo,0.0
+Tajikistan,0.0
+Zambia,0.0
+Swaziland,0.0
+Tuvalu,0.0
+Sierra Leone,0.0
+Puerto Rico,0.0
+Seychelles,0.0
+Singapore,0.0
+Sao Tome and Principe,0.0
+Samoa,0.0
+Saint Vincent and the Grenadines,0.0
+Sint Maarten (Dutch part),0.0
+Solomon Islands,0.0
+Somalia,0.0
+Saint Pierre and Miquelon,0.0
+Saint Lucia,0.0
+Saint Kitts and Nevis,0.0
+Saint Helena,0.0
+Réunion,0.0
+Rwanda,0.0
+South Sudan,0.0
+Sri Lanka,0.0
+St. Kitts-Nevis-Anguilla,0.0
+Liechtenstein,0.0
+North Macedonia,0.0
+Dominica,0.0
+Comoros,0.0
+Cook Islands,0.0
+Costa Rica,0.0
+Curaçao,0.0
+Cyprus,0.0
+Democratic Republic of the Congo,0.0
+Djibouti,0.0
+Dominican Republic,0.0
+North Korea,0.0
+El Salvador,0.0
+Eritrea,0.0
+Faeroe Islands,0.0
+Fiji,0.0
+French Guiana,0.0
+French Polynesia,0.0
+Gambia,0.0
+Christmas Island,0.0
+Central African Republic,0.0
+Cape Verde,0.0
+Burundi,0.0
+Andorra,0.0
+Anguilla,0.0
+Antarctica,0.0
+Antigua and Barbuda,0.0
+Armenia,0.0
+Aruba,0.0
+Bahamas,0.0
+Benin,0.0
+Bermuda,0.0
+Bhutan,0.0
+"Bonaire, Saint Eustatius and Saba",0.0
+Bosnia and Herzegovina,0.0
+Botswana,0.0
+British Virgin Islands,0.0
+Burkina Faso,0.0
+Greenland,0.0
+Grenada,0.0
+Guadeloupe,0.0
+Mali,0.0
+Marshall Islands,0.0
+Martinique,0.0
+Mauritius,0.0
+Mayotte,0.0
+Micronesia (Federated States of),0.0
+Moldova,0.0
+Montenegro,0.0
+Montserrat,0.0
+Morocco,0.0
+Namibia,0.0
+Nauru,0.0
+Nepal,0.0
+New Caledonia,0.0
+Nicaragua,0.0
+Niue,0.0
+Malta,0.0
+Maldives,0.0
+Guinea,0.0
+Malawi,0.0
+Guinea-Bissau,0.0
+Haiti,0.0
+Honduras,0.0
+Hong Kong,0.0
+Jamaica,0.0
+Kenya,0.0
+Kiribati,0.0
+Kosovo,0.0
+Kyrgyzstan,0.0
+Laos,0.0
+Lebanon,0.0
+Lesotho,0.0
+Liberia,0.0
+Macao,0.0
+Madagascar,0.0
+Zimbabwe,0.0

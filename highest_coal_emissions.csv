@@ -1,0 +1,225 @@
+Country,Coal
+China,130257.534962
+USA,38500.808418
+India,24723.491522
+Japan,9477.663751
+Russia,9097.078482
+South Africa,8295.684545
+Germany,7351.850813999999
+South Korea,5900.86663
+Poland,4638.405071
+Australia,4081.772715
+Indonesia,3615.406104
+Taiwan,3280.859252
+Kazakhstan,3128.56756
+Ukraine,2955.558259
+Turkey,2808.335685
+United Kingdom,2377.06421
+Canada,2029.928313
+Viet Nam,1669.6375130000001
+Czech Republic,1586.432926
+Spain,1309.586864
+Brazil,1277.4576
+Italy,1209.917818
+Thailand,1183.573468
+Malaysia,1099.72286
+North Korea,1070.625145
+France,1038.266679
+Mexico,924.369668
+Philippines,798.940291
+Greece,792.549342
+Serbia,718.12036
+Netherlands,699.014751
+Romania,624.803474
+Bulgaria,600.76577
+Israel,564.846275
+Pakistan,529.92715
+Hong Kong,517.040111
+Finland,496.021861
+Mongolia,446.002409
+Belgium,426.66542
+Chile,421.224681
+Slovakia,345.078695
+Morocco,343.581291
+Austria,333.348733
+Bosnia and Herzegovina,304.158719
+Colombia,285.242493
+Denmark,276.174445
+Hungary,261.912954
+Estonia,255.410976
+Portugal,227.275501
+Sweden,204.47699
+Ireland,195.350675
+Zimbabwe,165.111566
+New Zealand,137.681472
+Uzbekistan,136.532899
+Slovenia,126.146201
+North Macedonia,123.691936
+Bangladesh,111.242711
+Iran,104.393967
+Laos,97.852386
+Egypt,83.054437
+Kosovo,81.700028
+United Arab Emirates,79.674396
+Belarus,78.366191
+Argentina,78.129872
+Norway,75.2276
+Kyrgyzstan,65.42994
+Peru,63.863874
+Botswana,58.31547
+Dominican Republic,52.123729
+Guatemala,51.589928
+Sri Lanka,51.021033
+Croatia,50.334822
+Afghanistan,45.828845
+Réunion,38.548882
+Lesotho,37.75195
+Nepal,36.332791
+Myanmar,35.098884
+Algeria,34.543539
+Tajikistan,32.678091
+New Caledonia,30.843278
+Mauritius,29.372065
+Montenegro,28.586275999999998
+Cambodia,28.324441
+Senegal,20.359805
+Singapore,19.956722
+Kenya,18.503731
+Zambia,17.952163
+Lithuania,17.122392
+Georgia,14.605692
+Panama,13.867062
+Iceland,13.333121
+Switzerland,12.791729
+Tanzania,12.782209
+Madagascar,12.676848
+Lebanon,12.024496
+Ethiopia,11.9677
+Guadeloupe,9.889906
+Venezuela,9.070979
+Swaziland,7.552428
+Moldova,7.530573
+Luxembourg,7.327441
+Latvia,7.203341
+Jordan,6.99644
+Niger,6.782108
+Albania,6.616253
+Honduras,5.232568
+Yemen,4.977337
+Jamaica,4.557236
+Bhutan,4.460719
+Malawi,4.142902
+Nigeria,2.008688
+Mozambique,1.840826
+Cyprus,1.758
+Namibia,1.553578
+Benin,1.512371
+Brunei Darussalam,1.129193
+Cuba,0.981023
+Tunisia,0.912347
+Costa Rica,0.7988390000000001
+Burundi,0.432668
+Armenia,0.21379900000000002
+Fiji,0.172405
+Syria,0.162964
+Azerbaijan,0.157562
+Bolivia,0.146815
+Uruguay,0.098454
+Bahamas,0.098057
+Rwanda,0.084763
+El Salvador,0.077482
+Paraguay,0.043485
+Sierra Leone,0.014656
+Libya,0.003664
+Macao,0.003664
+Malta,0.000631
+Liechtenstein,0.000265
+St. Kitts-Nevis-Anguilla,0.0
+Angola,0.0
+Tuvalu,0.0
+Seychelles,0.0
+Antigua and Barbuda,0.0
+Uganda,0.0
+Antarctica,0.0
+Anguilla,0.0
+Andorra,0.0
+Sudan,0.0
+Saudi Arabia,0.0
+Sao Tome and Principe,0.0
+Samoa,0.0
+Vanuatu,0.0
+Wallis and Futuna Islands,0.0
+Saint Vincent and the Grenadines,0.0
+Turks and Caicos Islands,0.0
+Turkmenistan,0.0
+Sint Maarten (Dutch part),0.0
+Trinidad and Tobago,0.0
+Bermuda,0.0
+Tonga,0.0
+Solomon Islands,0.0
+Somalia,0.0
+Togo,0.0
+Timor-Leste,0.0
+Aruba,0.0
+Belize,0.0
+South Sudan,0.0
+Saint Lucia,0.0
+Barbados,0.0
+Suriname,0.0
+Bahrain,0.0
+Saint Pierre and Miquelon,0.0
+Gambia,0.0
+Saint Kitts and Nevis,0.0
+Equatorial Guinea,0.0
+Maldives,0.0
+Liberia,0.0
+Curaçao,0.0
+Kuwait,0.0
+Côte d'Ivoire,0.0
+Kiribati,0.0
+Democratic Republic of the Congo,0.0
+Djibouti,0.0
+Dominica,0.0
+Ecuador,0.0
+Iraq,0.0
+Eritrea,0.0
+Saint Helena,0.0
+Faeroe Islands,0.0
+Haiti,0.0
+Guyana,0.0
+Guinea-Bissau,0.0
+Guinea,0.0
+French Guiana,0.0
+Grenada,0.0
+Greenland,0.0
+French Polynesia,0.0
+Ghana,0.0
+Gabon,0.0
+Mali,0.0
+Marshall Islands,0.0
+Martinique,0.0
+Mauritania,0.0
+"Bonaire, Saint Eustatius and Saba",0.0
+British Virgin Islands,0.0
+Qatar,0.0
+Puerto Rico,0.0
+Burkina Faso,0.0
+Papua New Guinea,0.0
+Panama Canal Zone,0.0
+Palau,0.0
+Cameroon,0.0
+Oman,0.0
+Occupied Palestinian Territory,0.0
+Central African Republic,0.0
+Chad,0.0
+Niue,0.0
+Nicaragua,0.0
+Christmas Island,0.0
+Comoros,0.0
+Nauru,0.0
+Congo,0.0
+Montserrat,0.0
+Cook Islands,0.0
+Micronesia (Federated States of),0.0
+Mayotte,0.0
+Cape Verde,0.0

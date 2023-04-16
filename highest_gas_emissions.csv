@@ -1,0 +1,225 @@
+Country,Gas
+USA,30012.365171
+Russia,16867.348943
+China,6314.465957
+Iran,6277.96305
+Japan,4733.6579710000005
+Canada,4276.455903
+United Kingdom,3969.273451
+Germany,3760.369347
+Saudi Arabia,3670.562704
+Italy,3251.24892
+Mexico,2790.635804
+United Arab Emirates,2396.268316
+Ukraine,2110.391875
+Uzbekistan,2049.722021
+India,2034.204247
+France,1943.658731
+Argentina,1901.605574
+South Korea,1873.686089
+Egypt,1837.1564309999999
+Netherlands,1695.2885919999999
+Turkey,1620.400235
+Indonesia,1541.272853
+Malaysia,1516.45496
+Thailand,1505.559556
+Australia,1430.9913980000001
+Algeria,1392.00954
+Pakistan,1385.502945
+Spain,1368.912532
+Qatar,1273.446584
+Brazil,1175.126473
+Venezuela,1027.166441
+Turkmenistan,853.685374
+Bangladesh,843.279165
+Belarus,780.4514369999999
+Belgium,771.492407
+Trinidad and Tobago,765.547298
+Oman,763.136624
+Kazakhstan,734.28455
+Taiwan,702.5264980000001
+Kuwait,701.122669
+Poland,650.218455
+Romania,610.008728
+Nigeria,565.803263
+Bahrain,505.347981
+Hungary,492.136438
+Azerbaijan,435.435715
+Colombia,418.562834
+Czech Republic,386.845982
+Austria,374.532505
+Iraq,329.856815
+Singapore,328.268215
+Norway,307.387833
+Viet Nam,303.48445499999997
+Libya,290.818385
+Slovakia,242.200645
+Chile,241.842586
+Syria,231.95032700000002
+Tunisia,215.557878
+Ireland,212.66779300000002
+Peru,209.116425
+Portugal,208.737711
+Israel,197.741618
+Denmark,191.154313
+New Zealand,180.902273
+South Africa,161.21110000000002
+Greece,159.069759
+Finland,146.937387
+Switzerland,145.31915
+Philippines,135.654196
+Bolivia,133.069659
+Bulgaria,130.800955
+Myanmar,123.975447
+Hong Kong,119.892374
+Brunei Darussalam,114.39157
+Croatia,113.02242
+Lithuania,109.257034
+Serbia,95.005377
+Jordan,93.148465
+Armenia,82.636188
+Georgia,77.012776
+Côte d'Ivoire,75.673092
+Equatorial Guinea,65.534764
+Latvia,61.400771
+Luxembourg,48.490465
+Sweden,47.904843
+Moldova,42.277144
+Cuba,40.896481
+Slovenia,38.858961
+Angola,32.17203
+Morocco,30.185241
+Dominican Republic,29.950622
+Estonia,28.417263
+Ghana,27.937973
+Tanzania,25.670802000000002
+Ecuador,24.582543
+Kyrgyzstan,21.122976
+Mozambique,14.666015
+Cameroon,13.807878
+Yemen,13.635112
+Gabon,13.539597
+Tajikistan,13.266139
+Congo,13.121873
+Bosnia and Herzegovina,10.645768
+Papua New Guinea,10.297288
+Afghanistan,6.593126
+North Macedonia,6.1766749999999995
+Panama,4.125473
+Malta,3.521389
+Uruguay,2.837231
+Macao,2.197702
+Jamaica,1.890941
+Albania,1.3620489999999998
+Liechtenstein,1.290058
+Togo,0.951933
+Barbados,0.834634
+Curaçao,0.791408
+Senegal,0.721197
+Rwanda,0.6152569999999999
+Benin,0.592229
+Lebanon,0.5788949999999999
+Democratic Republic of the Congo,0.249234
+Suriname,0.166217
+Belize,0.051422
+Cyprus,0.014344
+Fiji,0.003676
+Botswana,0.003662
+Iceland,0.003332
+Christmas Island,0.0
+Cook Islands,0.0
+Sri Lanka,0.0
+St. Kitts-Nevis-Anguilla,0.0
+South Sudan,0.0
+Sudan,0.0
+Comoros,0.0
+Liberia,0.0
+Somalia,0.0
+Solomon Islands,0.0
+Costa Rica,0.0
+Chad,0.0
+Sint Maarten (Dutch part),0.0
+Sierra Leone,0.0
+Seychelles,0.0
+Djibouti,0.0
+Sao Tome and Principe,0.0
+Swaziland,0.0
+Burundi,0.0
+Central African Republic,0.0
+Cape Verde,0.0
+Zambia,0.0
+Andorra,0.0
+Wallis and Futuna Islands,0.0
+Anguilla,0.0
+Antarctica,0.0
+Vanuatu,0.0
+Antigua and Barbuda,0.0
+Aruba,0.0
+Bahamas,0.0
+Uganda,0.0
+Tuvalu,0.0
+Turks and Caicos Islands,0.0
+Bermuda,0.0
+Bhutan,0.0
+"Bonaire, Saint Eustatius and Saba",0.0
+Tonga,0.0
+Timor-Leste,0.0
+British Virgin Islands,0.0
+Burkina Faso,0.0
+Saint Vincent and the Grenadines,0.0
+Cambodia,0.0
+Samoa,0.0
+Saint Kitts and Nevis,0.0
+Saint Pierre and Miquelon,0.0
+Guinea-Bissau,0.0
+Guyana,0.0
+Nepal,0.0
+Nauru,0.0
+Namibia,0.0
+Haiti,0.0
+Honduras,0.0
+Montserrat,0.0
+Montenegro,0.0
+Mongolia,0.0
+Kenya,0.0
+Micronesia (Federated States of),0.0
+Kiribati,0.0
+Mayotte,0.0
+Mauritius,0.0
+Mauritania,0.0
+Martinique,0.0
+Marshall Islands,0.0
+Kosovo,0.0
+Mali,0.0
+Maldives,0.0
+Laos,0.0
+Malawi,0.0
+Madagascar,0.0
+New Caledonia,0.0
+Nicaragua,0.0
+Saint Lucia,0.0
+Niger,0.0
+Lesotho,0.0
+Saint Helena,0.0
+Réunion,0.0
+Dominica,0.0
+El Salvador,0.0
+Eritrea,0.0
+Puerto Rico,0.0
+Ethiopia,0.0
+Faeroe Islands,0.0
+French Guiana,0.0
+Paraguay,0.0
+French Polynesia,0.0
+Panama Canal Zone,0.0
+Gambia,0.0
+Palau,0.0
+Greenland,0.0
+Grenada,0.0
+Occupied Palestinian Territory,0.0
+Guadeloupe,0.0
+Guatemala,0.0
+North Korea,0.0
+Niue,0.0
+Guinea,0.0
+Zimbabwe,0.0
