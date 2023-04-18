@@ -3,8 +3,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import psycopg2
-import flask
-from flask import Flask
+from flask import Flask, jsonify
 from flask_cors import CORS
 import numpy as np
 import pandas as pd
@@ -39,6 +38,7 @@ def welcome():
     
     f"Welcome to the CO2 Emissions by Country API!<br/>"
     f"Available Routes:<br/>"
+    f"/api/v1.0/finalemissions<br/>"
     f"/api/v1.0/totalemissions<br/>"
     f"/api/v1.0/coal<br/>"
     f"/api/v1.0/oil<br/>"
@@ -48,6 +48,20 @@ def welcome():
     )
 
 #Create function for total page
+@app.route("/api/v1.0/finalemissions")
+def final():
+    
+    conn = psycopg2.connect(conn_string)
+    
+    final = pd.read_sql('select * from final', conn)
+    
+   
+    return final.to_json(orient = 'records')
+    # return jsonify(total.loc[:, ['country', 'total']])
+    # return jsonify(list(total_dictionary))
+
+
+#Create function for total page
 @app.route("/api/v1.0/totalemissions")
 def total():
     
@@ -55,7 +69,10 @@ def total():
     
     total = pd.read_sql('select * from total', conn)
     
-    return total.to_json()
+   
+    return total.to_json(orient = 'records')
+    # return jsonify(total.loc[:, ['country', 'total']])
+    # return jsonify(list(total_dictionary))
 
 #Create function for coal page
 @app.route("/api/v1.0/coal")
@@ -64,7 +81,7 @@ def coal():
     
     coal = pd.read_sql('select * from coal', conn)
     
-    return coal.to_json()
+    return coal.to_json(orient = 'records')
 
 #Create function for oil page
 @app.route("/api/v1.0/oil")
@@ -73,7 +90,7 @@ def oil():
     
     oil = pd.read_sql('select * from oil', conn)
     
-    return oil.to_json()
+    return oil.to_json(orient = 'records')
 
 #Create function for gas page
 @app.route("/api/v1.0/gas")
@@ -82,7 +99,7 @@ def gas():
     
     gas = pd.read_sql('select * from gas', conn)
     
-    return gas.to_json()
+    return gas.to_json(orient = 'records')
 
 #Create function for cement page
 @app.route("/api/v1.0/cement")
@@ -91,7 +108,7 @@ def cement():
     
     cement = pd.read_sql('select * from cement', conn)
     
-    return cement.to_json()
+    return cement.to_json(orient = 'records')
 
 #Create function for flaring page
 @app.route("/api/v1.0/flaring")
@@ -100,7 +117,7 @@ def flaring():
     
     flaring = pd.read_sql('select * from flaring', conn)
     
-    return flaring.to_json()
+    return flaring.to_json(orient = 'records')
 
 
 if __name__ == '__main__':
