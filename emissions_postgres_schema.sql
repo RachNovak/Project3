@@ -87,3 +87,18 @@ CREATE TABLE flaring(
 
 SELECT * 
 FROM flaring
+
+CREATE TABLE final(
+		country VARCHAR NOT NULL, 
+		total FLOAT, 
+		coal FLOAT, 
+		oil FLOAT, 
+		gas FLOAT,
+		cement FLOAT, 
+		flaring FLOAT,
+		FOREIGN KEY (country) REFERENCES total (country),
+		PRIMARY KEY (country)
+);
+
+SELECT *
+FROM final
