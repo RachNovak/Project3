@@ -49,7 +49,7 @@ def welcome():
 
 #Create function for total page
 @app.route("/api/v1.0/finalemissions")
-def total():
+def final():
     
     conn = psycopg2.connect(conn_string)
     

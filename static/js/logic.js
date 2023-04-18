@@ -9,7 +9,7 @@ function init() {
     var selector = d3.select('#selDataset');
 
     //Use the list of country names to populate the select options
-    d3.json("http://127.0.0.1:5000/api/v1.0/totalemissions").then((data) => {
+    d3.json("http://127.0.0.1:5000/api/v1.0/finalemissions").then((data) => {
        
         
         //const countryArray = Array.from(countryNames);
