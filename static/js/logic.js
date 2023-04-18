@@ -44,8 +44,8 @@ function init() {
         
         var firstCountry = data[0];
         console.log(firstCountry)
-        //buildCharts(firstCountry);
-        //buildMetadata(firstCountry);
+        buildCharts(firstCountry);
+        buildMetadata(firstCountry);
 
         
     
@@ -56,14 +56,33 @@ function init() {
 // Initialize the dashboard
 init();
 
-function optionChanged(newSample) {
-  // Fetch new data each time a new sample is selected
-  //buildMetadata(newSample);
-  //buildCharts(newSample);
+function optionChanged(newCountry) {
+  // Fetch new data each time a new country is selected
+  buildMetadata(newCountry);
+  buildCharts(newCountry);
   
 }
 
+// Demographics Panel 
+function buildMetadata(row) {
+    d3.json("http://127.0.0.1:5000/api/v1.0/finalemissions").then((data) => {
+    var metadata = data;
+    // Filter the data for the object with the desired country information
+    var resultArray = metadata.filter(sampleObj => sampleObj.country == row);
+    var result = resultArray[0];
+    // Use d3 to select the panel with id of `#sample-metadata`
+    var PANEL = d3.select("#sample-metadata");
 
+    // Use `.html("") to clear any existing metadata
+    PANEL.html("");
+
+    // Use `Object.entries` to add each key and value pair to the panel
+    Object.entries(result).forEach(([key, value]) => {
+      PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+    });
+
+  });
+}
 
 
 
