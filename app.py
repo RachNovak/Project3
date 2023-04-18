@@ -3,8 +3,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import psycopg2
-import flask
-from flask import Flask
+from flask import Flask, jsonify
 from flask_cors import CORS
 import numpy as np
 import pandas as pd
@@ -55,7 +54,10 @@ def total():
     
     total = pd.read_sql('select * from total', conn)
     
-    return total.to_json()
+   
+    return total.to_json(orient = 'records')
+    # return jsonify(total.loc[:, ['country', 'total']])
+    # return jsonify(list(total_dictionary))
 
 #Create function for coal page
 @app.route("/api/v1.0/coal")
