@@ -154,32 +154,32 @@ function buildCharts(row) {
 
       Plotly.newPlot("gauge", piedata, layout2);
 
-      // 1. Create the trace for the bubble chart.
-      var bubbleChart = [{
-        x: keys,
-        y: values,
-        text: values,
-        mode: "markers",
-        marker: {
-          size: values,
-          color: values,
-          colorscale: "Electric",
-          opacity: 0.7,
-        }, 
-        type: 'scatter'
-      }];
-      // 2. Create the layout for the bubble chart.
-      var bubbleLayout = {
-        title: "CO2 Emissions",
-        height: 600, 
-        width: 1200,
-        xaxis: {title: "Emission Types"},
-        hovermode: "closest",
-        showlegend:false,
-        showgrid:true
-      };
-      // 3. Use Plotly to plot the data with the layout.
-      Plotly.newPlot("bubble", bubbleChart, bubbleLayout);
+      // // 1. Create the trace for the bubble chart.
+      // var bubbleChart = [{
+      //   x: keys,
+      //   y: values,
+      //   text: values,
+      //   mode: "markers",
+      //   marker: {
+      //     size: values,
+      //     color: values,
+      //     colorscale: "Electric",
+      //     opacity: 0.7,
+      //   }, 
+      //   type: 'scatter'
+      // }];
+      // // 2. Create the layout for the bubble chart.
+      // var bubbleLayout = {
+      //   title: "CO2 Emissions",
+      //   height: 600, 
+      //   width: 1200,
+      //   xaxis: {title: "Emission Types"},
+      //   hovermode: "closest",
+      //   showlegend:false,
+      //   showgrid:true
+      // };
+      // // 3. Use Plotly to plot the data with the layout.
+      // Plotly.newPlot("bubble", bubbleChart, bubbleLayout);
 
 
 
