@@ -39,6 +39,7 @@ def welcome():
     f"Welcome to the CO2 Emissions by Country API!<br/>"
     f"Available Routes:<br/>"
     f"/api/v1.0/finalemissions<br/>"
+    f"/api/v1.0/australia<br/>"
     f"/api/v1.0/totalemissions<br/>"
     f"/api/v1.0/coal<br/>"
     f"/api/v1.0/oil<br/>"
@@ -59,6 +60,18 @@ def final():
     return final.to_json(orient = 'records')
     # return jsonify(total.loc[:, ['country', 'total']])
     # return jsonify(list(total_dictionary))
+
+
+#Create function for total page
+@app.route("/api/v1.0/australia")
+def australia():
+    
+    conn = psycopg2.connect(conn_string)
+    
+    final = pd.read_sql('select * from australia', conn)
+    
+   
+    return final.to_json(orient = 'records')
 
 
 #Create function for total page
