@@ -6,6 +6,7 @@ DROP TABLE oil;
 DROP TABLE gas;
 DROP TABLE cement;
 DROP TABLE flaring;
+DROP TABLE australia;
 
 --create main table with emissions data
 CREATE TABLE emissions(
@@ -88,6 +89,7 @@ CREATE TABLE flaring(
 SELECT * 
 FROM flaring
 
+
 CREATE TABLE final(
 		country VARCHAR NOT NULL, 
 		total FLOAT, 
@@ -102,3 +104,22 @@ CREATE TABLE final(
 
 SELECT *
 FROM final
+
+
+CREATE TABLE australia(
+		id INT,
+		country VARCHAR NOT NULL, 
+		iso VARCHAR NOT NULL, 
+		year INT, 
+		total FLOAT, 
+		coal FLOAT, 
+		oil FLOAT, 
+		gas FLOAT, 
+		cement FLOAT, 
+		flaring FLOAT, 
+		other FLOAT, 
+		percapita FLOAT
+);
+
+SELECT * 
+FROM australia
