@@ -52,7 +52,6 @@
       </div>
     </div>
   </div>
-
   <br>
     <div class="text-container">
       <p>&#128236; Sign our Guestbook! &#128211;</p>
@@ -61,7 +60,7 @@
       <div class="guestbook-form">
         <form action="#">
           <input type="text" placeholder="Enter your name">
-          <input type="submit" value="Sign My Guestbook" id="guestbook-submit">
+          <input type="submit" value="Sign Our Guestbook" id="guestbook-submit">
         </form>
       </div>
       <script>
@@ -90,6 +89,44 @@
         });
       </script>
 
+  <div class="rss-feed">
+    <h2>News Feed</h2>
+    <h3>Here are all the latest positive environmental stories</h3>
+  <div id="rss-feed">
+    <ul id="feed-list">
+
+      <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+          $(document).ready(function () {
+            $.ajax({
+              url: "https://rss.app/feeds/tGJKXZdEBKANLaOR.xml",
+              dataType: "xml",
+              success: function (data) {
+                var $xml = $(data);
+                var items = [];
+                $xml.find("item").each(function () {
+                  var $this = $(this);
+                  var title = $this.find("title").text();
+                  var link = $this.find("link").text();
+                  var imgSrc = $this.find("media\\:content, content").first().attr("url");
+                  var imgHtml = '';
+                  if (typeof imgSrc !== 'undefined') {
+                    imgHtml = '<img src="' + imgSrc + '" class="feed-item-image" width="500">';
+                  }
+                  items.push("<li class='feed-item'><a href='" + link + "' class='feed-item-content'>" + imgHtml + '<br>' + "<div class='feed-item-text'>" + title + "</div></a></li>");
+                });
+                $("#feed-list").html(items.join(""));
+              }
+            });
+          });
+        </script>
+
+      </head>
+    </ul>
+  </div>
+</div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
