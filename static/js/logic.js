@@ -154,6 +154,34 @@ function buildCharts(row) {
 
       Plotly.newPlot("gauge", piedata, layout2);
 
+      // 1. Create the trace for the bubble chart.
+      var bubbleChart = [{
+        x: keys,
+        y: values,
+        text: values,
+        mode: "markers",
+        marker: {
+          size: values,
+          color: values,
+          colorscale: "Electric"
+        }, 
+        type: 'scatter'
+      }];
+      // 2. Create the layout for the bubble chart.
+      var bubbleLayout = {
+        title: "CO2 Emissions",
+        height: 500, 
+        width: 1000,
+        xaxis: {title: "Country"},
+        hovermode: "closest",
+        showlegend:false
+      };
+      // 3. Use Plotly to plot the data with the layout.
+      Plotly.newPlot("bubble", bubbleChart, bubbleLayout);
+
+
+
+
 
       //Filter the data for the object with the desired sample number
       var metadata = data;
