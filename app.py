@@ -19,13 +19,13 @@ CORS(app)
 ###############################################
 ## declare the connection string specifying the hose name database name, user name and password
 conn_string = "host= 'localhost' dbname= 'project3'\
-user= 'postgres' password= '3LetterAnatomy'"
+user= 'postgres' password= 'Mahyar@378'"
 
 #use connect function to establish the connection to the database
 conn = psycopg2.connect(conn_string)
 
 #Query all records in the database
-data = pd.read_sql('select * from emissions', conn)
+data = pd.read_sql('select * from final', conn)
 
 
 #################################################

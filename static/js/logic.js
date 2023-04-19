@@ -163,18 +163,20 @@ function buildCharts(row) {
         marker: {
           size: values,
           color: values,
-          colorscale: "Electric"
+          colorscale: "Electric",
+          opacity: 0.7,
         }, 
         type: 'scatter'
       }];
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
         title: "CO2 Emissions",
-        height: 500, 
-        width: 1000,
-        xaxis: {title: "Country"},
+        height: 600, 
+        width: 1200,
+        xaxis: {title: "Emission Types"},
         hovermode: "closest",
-        showlegend:false
+        showlegend:false,
+        showgrid:true
       };
       // 3. Use Plotly to plot the data with the layout.
       Plotly.newPlot("bubble", bubbleChart, bubbleLayout);

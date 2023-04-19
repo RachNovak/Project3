@@ -10,7 +10,15 @@
 </head>
 
 <body>
-
+  <br>
+  <div class="col-md-12 text-container">
+    <h1>
+      <p>Welcome to Group 5's project! &#128200;</p>
+    </h1>
+    <p>Brought to you by Martha, Rachel, Stephen and Mika</p>
+  </div>
+  <br>
+  
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
@@ -22,7 +30,7 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Country Name:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset" title="Choose a country" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -44,6 +52,44 @@
       </div>
     </div>
   </div>
+
+  <br>
+    <div class="text-container">
+      <p>&#128236; Sign our Guestbook! &#128211;</p>
+      <p>&#128071;
+      <p>
+      <div class="guestbook-form">
+        <form action="#">
+          <input type="text" placeholder="Enter your name">
+          <input type="submit" value="Sign My Guestbook" id="guestbook-submit">
+        </form>
+      </div>
+      <script>
+        const guestbookSubmit = document.getElementById('guestbook-submit');
+
+        guestbookSubmit.addEventListener('click', (event) => {
+          event.preventDefault();
+          const width = 450;
+          const height = 300;
+          const left = (window.innerWidth - width) / 2;
+          const top = (window.innerHeight - height) / 2;
+          const popup = window.open('', 'popup', `width=${width}, height=${height}, left=${left}, top=${top}`);
+          popup.document.title = "Recorded!!";
+          const img = new Image();
+          img.src = 'https://thumbs.dreamstime.com/b/senior-man-waving-happily-8936027.jpg'; // replace with your image URL
+          img.style.width = '350px'; // set the image width
+          img.style.margin = '0 auto'; // set the image to display as a block
+          const text = document.createElement('p');
+          text.innerText = 'Thanks for stopping by!'; // add the text content
+          text.style.textAlign = 'center'; // center the text
+          popup.document.body.appendChild(img);
+          popup.document.body.appendChild(text);
+          setTimeout(function () {
+            popup.close();
+          }, 2000); // close the popup after 3 seconds
+        });
+      </script>
+
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
