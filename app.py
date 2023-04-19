@@ -7,6 +7,10 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 import numpy as np
 import pandas as pd
+import chart_studio
+import chart_studio.plotly as py
+import chart_studio.tools as tls
+chart_studio.tools.set_credentials_file(username='Mika.Mo', api_key='NNQVku6hazjx6P4NKc1e')
 
 #################################################
 # Flask Setup
@@ -19,13 +23,13 @@ CORS(app)
 ###############################################
 ## declare the connection string specifying the hose name database name, user name and password
 conn_string = "host= 'localhost' dbname= 'project3'\
-user= 'postgres' password= '3LetterAnatomy'"
+user= 'postgres' password= 'Mahyar@378'"
 
 #use connect function to establish the connection to the database
 conn = psycopg2.connect(conn_string)
 
 #Query all records in the database
-data = pd.read_sql('select * from emissions', conn)
+data = pd.read_sql('select * from final', conn)
 
 
 #################################################
@@ -45,6 +49,7 @@ def welcome():
     f"/api/v1.0/gas<br/>"
     f"/api/v1.0/cement<br/>"
     f"/api/v1.0/flaring<br/>"
+    f"/api/v1.0/bubblechart<br/>"
     )
 
 #Create function for total page
@@ -118,6 +123,31 @@ def flaring():
     flaring = pd.read_sql('select * from flaring', conn)
     
     return flaring.to_json(orient = 'records')
+
+#Create function for bubble chart
+@app.route("/api/v1.0/bubblechart")
+def bubblechart():
+    # query the final table for the required data
+    query = """
+    SELECT country, SUM("total") AS total_emissions
+    FROM final
+    GROUP BY country
+    """
+    df = pd.read_sql(query, conn)
+    
+    # create a JSON object that includes the required data for the chart
+    chart_data = {
+        "datasets": [
+            {
+                "label": "CO2 Emissions",
+                "backgroundColor": "rgba(255, 99, 132, 0.6)",
+                "borderColor": "rgba(255, 99, 132, 1)",
+                "data": df.to_dict('records')
+            }
+        ]
+    }
+
+    return jsonify(chart_data)
 
 
 if __name__ == '__main__':
