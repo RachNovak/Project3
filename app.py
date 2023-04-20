@@ -19,13 +19,17 @@ CORS(app)
 ###############################################
 ## declare the connection string specifying the host name database name, user name and password
 conn_string = "host= 'localhost' dbname= 'project3'\
+<<<<<<< HEAD
 user= 'postgres' password= 'admin'"
+=======
+user= 'postgres' password= 'Mahyar@378'"
+>>>>>>> bf6cf63638d587019daf78ce430904373df54e02
 
 #use connect function to establish the connection to the database
 conn = psycopg2.connect(conn_string)
 
 #Query all records in the database
-data = pd.read_sql('select * from emissions', conn)
+data = pd.read_sql('select * from final', conn)
 
 
 #################################################
@@ -46,6 +50,7 @@ def welcome():
     f"/api/v1.0/gas<br/>"
     f"/api/v1.0/cement<br/>"
     f"/api/v1.0/flaring<br/>"
+    f"/api/v1.0/australia<br/>"
     )
 
 #Create function for total page
@@ -130,6 +135,18 @@ def flaring():
     
     return flaring.to_json(orient = 'records')
 
+#Create function for total page
+@app.route("/api/v1.0/australia")
+def australia():
+    
+    conn = psycopg2.connect(conn_string)
+    
+    final = pd.read_sql('select * from australia', conn)
+    
+   
+    return final.to_json(orient = 'records')
+    # return jsonify(total.loc[:, ['country', 'total']])
+    # return jsonify(list(total_dictionary))
 
 if __name__ == '__main__':
     app.run(debug=True)

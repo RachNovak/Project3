@@ -10,7 +10,21 @@
 </head>
 
 <body>
-
+  <br>
+  <div class="col-md-12 text-container">
+    <h1>
+      <p>Welcome to Group 5's project! &#128200;</p>
+    </h1>
+    <p>Brought to you by Martha, Rachel, Stephen and Mika</p>
+  </div>
+  <br>
+  <style>
+    .text-center {
+      text-align: center;
+      margin: auto;
+    }
+    </style>
+  
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
@@ -22,7 +36,7 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Country Name:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset" title="Choose a country" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -37,6 +51,7 @@
       <div class="col-md-5">
         <div id="gauge"></div>
       </div>
+<<<<<<< HEAD
     </div>
     <div class="container">
       <canvas> id="myChart"></canvas>
@@ -46,7 +61,105 @@
         <!-- <div id="bubble"></div> -->
       </div>
     </div>
+=======
+
+      <div class="half-page-line"></div>
+        <h2>Australian CO2 Emissions 2000-2021</h2>
+
+    
+        <canvas id="myChart"></canvas>
+>>>>>>> bf6cf63638d587019daf78ce430904373df54e02
   </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script>
+        const years = [2000, 2004, 2008, 2012, 2016, 2020, 2021];
+        const emissions = ["Coal", "Oil", "Gas", "Cement", "Flaring"];
+  
+        const colors = [
+          "rgba(54, 162, 235, 0.5)",
+          "rgba(255, 206, 86, 0.5)",
+          "rgba(75, 192, 192, 0.5)",
+          "rgba(153, 102, 255, 0.5)",
+          "rgba(255, 159, 64, 0.5)"
+        ];
+  
+        function buildCharts(data) {
+          const ctx = document.getElementById("myChart").getContext("2d")};
+      </script>
+  </html>
+  <div class="half-page-line"></div>
+  <br>
+    <div class="text-container">
+      <p>&#128236; Sign our Guestbook! &#128211;</p>
+      <p>&#128071;
+      <p>
+      <div class="guestbook-form">
+        <form action="#">
+          <input type="text" placeholder="Enter your name">
+          <input type="submit" value="Sign" id="guestbook-submit">
+        </form>
+      </div>
+      <script>
+        const guestbookSubmit = document.getElementById('guestbook-submit');
+
+        guestbookSubmit.addEventListener('click', (event) => {
+          event.preventDefault();
+          const width = 450;
+          const height = 300;
+          const left = (window.innerWidth - width) / 2;
+          const top = (window.innerHeight - height) / 2;
+          const popup = window.open('', 'popup', `width=${width}, height=${height}, left=${left}, top=${top}`);
+          popup.document.title = "Recorded!!";
+          const img = new Image();
+          img.src = 'https://thumbs.dreamstime.com/b/senior-man-waving-happily-8936027.jpg'; // replace with your image URL
+          img.style.width = '350px'; // set the image width
+          img.style.margin = '0 auto'; // set the image to display as a block
+          const text = document.createElement('p');
+          text.innerText = 'Thanks for stopping by!'; // add the text content
+          text.style.textAlign = 'center'; // center the text
+          popup.document.body.appendChild(img);
+          popup.document.body.appendChild(text);
+          setTimeout(function () {
+            popup.close();
+          }, 2000); // close the popup after 3 seconds
+        });
+      </script>
+
+  <div class="rss-feed">
+    <h2>News Feed</h2>
+    <h3>Here are all the latest positive environmental stories</h3>
+  <div id="rss-feed">
+    <ul id="feed-list">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <script>
+          $(document).ready(function () {
+            $.ajax({
+              url: "https://rss.app/feeds/tGJKXZdEBKANLaOR.xml",
+              dataType: "xml",
+              success: function (data) {
+                var $xml = $(data);
+                var items = [];
+                $xml.find("item").each(function () {
+                  var $this = $(this);
+                  var title = $this.find("title").text();
+                  var link = $this.find("link").text();
+                  var imgSrc = $this.find("media\\:content, content").first().attr("url");
+                  var imgHtml = '';
+                  if (typeof imgSrc !== 'undefined') {
+                    imgHtml = '<img src="' + imgSrc + '" class="feed-item-image" width="500">';
+                  }
+                  items.push("<li class='feed-item'><a href='" + link + "' class='feed-item-content'>" + imgHtml + '<br>' + "<div class='feed-item-text'>" + title + "</div></a></li>");
+                });
+                $("#feed-list").html(items.join(""));
+              }
+            });
+          });
+        </script>
+    </ul>
+  </div>
+</div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
