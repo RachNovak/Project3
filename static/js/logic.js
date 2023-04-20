@@ -151,7 +151,7 @@ function buildCharts(row) {
         height:500, 
         width: 700, 
         title: "Emissions by Type",
-        showlegend: false
+        showlegend: true
       };
 
       Plotly.newPlot("gauge", piedata, layout2);
