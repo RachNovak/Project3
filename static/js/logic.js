@@ -143,13 +143,15 @@ function buildCharts(row) {
         type: 'pie',
         marker: {
             colors: ultimateColors[0]
+        
         }
       }];
 
       let layout2 = {
         height:500, 
         width: 700, 
-        title: "Emissions by Type"
+        title: "Emissions by Type",
+        showlegend: false
       };
 
       Plotly.newPlot("gauge", piedata, layout2);
@@ -159,32 +161,32 @@ function buildCharts(row) {
       const chartConfig = {
         type: 'bar',
         data: {
-          labels: ['2000', '2005', '2010', '2015', '2020', '2021'],
+          labels: ['2000', '2005', '2010', '2015', '2018', '2021'],
           datasets: [
             {
               label: 'Coal',
-              data: [185.78, 200.69, 200.53, 174.18, 156.14, 150.95],
-              backgroundColor: '#f44336',
+              data: [185.78, 200.69, 200.53, 174.18, 169.37, 150.95],
+              backgroundColor: '#253494',
             },
             {
               label: 'Oil',
-              data: [102.33, 116.50, 124.55, 137.62, 135.47, 139.15],
-              backgroundColor: '#2196f3',
+              data: [102.33, 116.50, 124.55, 137.62, 143.71, 139.15],
+              backgroundColor: '#2c7fb8',
             },
             {
               label: 'Gas',
-              data: [46.59, 54.47, 64.26, 72.04, 84.47, 77.24],
-              backgroundColor: '#4caf50',
+              data: [46.59, 54.47, 64.26, 72.04, 79.43, 77.24],
+              backgroundColor: '#41b6c4',
             },
             {
               label: 'Cement',
-              data: [3.62, 3.66, 3.54, 3.07, 2.82, 2.82],
-              backgroundColor: '#ffeb3b',
+              data: [3.62, 3.66, 3.54, 3.07, 2.94, 2.82],
+              backgroundColor: '#74c476',
             },
             {
               label: 'Flaring',
-              data: [7.95, 6.91, 8.18, 10.82, 17.27, 17.27],
-              backgroundColor: '#9c27b0',
+              data: [7.95, 6.91, 8.18, 10.82, 16.92, 17.27],
+              backgroundColor: '#fed98e',
             },
           ],
         },
@@ -193,25 +195,20 @@ function buildCharts(row) {
           scales: {
             xAxes: [
               {
-                stacked: true,
-              },
-            ],
+              stacked: true,
+            }],
             yAxes: [
               {
-                stacked: true,
-              },
-            ],
+              stacked: true,  }]
           },
-        },
+          maintainAspectRatio: true,
+          legend: { position: 'bottom' },
+        }
       };
       
       const myChart = new Chart(ctx, chartConfig);
-
-
-
-
-
-      //Filter the data for the object with the desired sample number
+      
+      // Filter the data for the object with the desired sample number
       var metadata = data;
       var resultArray = metadata.filter(sampleObj => sampleObj.country == row);
       var result = resultArray[0];
