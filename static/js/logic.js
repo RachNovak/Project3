@@ -181,12 +181,12 @@ function buildCharts(row) {
             {
               label: 'Cement',
               data: [3.62, 3.66, 3.54, 3.07, 2.94, 2.82],
-              backgroundColor: '#74c476',
+              backgroundColor: '#a1dab4',
             },
             {
               label: 'Flaring',
               data: [7.95, 6.91, 8.18, 10.82, 16.92, 17.27],
-              backgroundColor: '#fed98e',
+              backgroundColor: '#ffffcc',
             },
           ],
         },
