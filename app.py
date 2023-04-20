@@ -45,6 +45,7 @@ def welcome():
     f"/api/v1.0/gas<br/>"
     f"/api/v1.0/cement<br/>"
     f"/api/v1.0/flaring<br/>"
+    f"/api/v1.0/australia<br/>"
     )
 
 #Create function for total page
@@ -119,6 +120,18 @@ def flaring():
     
     return flaring.to_json(orient = 'records')
 
+#Create function for total page
+@app.route("/api/v1.0/australia")
+def australia():
+    
+    conn = psycopg2.connect(conn_string)
+    
+    final = pd.read_sql('select * from australia', conn)
+    
+   
+    return final.to_json(orient = 'records')
+    # return jsonify(total.loc[:, ['country', 'total']])
+    # return jsonify(list(total_dictionary))
 
 if __name__ == '__main__':
     app.run(debug=True)
