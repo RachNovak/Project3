@@ -11,6 +11,7 @@
 The goal of this project is to tell a story using data visualizations.
 Interactivity should be built-in, allowing users to explore data on their own.
 Teams will also create a 10-minute presentation that lays out your theme, coding approach, data wrangling techniques, and final visualization
+#Link to the dashboard => https://rachnovak.github.io/Project3/
 
 # Five Project Requirements
 
