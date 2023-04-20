@@ -1,4 +1,9 @@
 # Project3
+
+## Team 5
+* Rachel Novak
+* Stephen Mims
+* 
 //Emissions Data Visualization
 The goal of this project is to tell a story using data visualizations.
 Interactivity should be built-in, allowing users to explore data on their own.
