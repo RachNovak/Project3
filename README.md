@@ -6,6 +6,7 @@
 * Mahyar Mohammadyani (Mika)
 * Martha Griggs
 
+[Published Page](https://rachnovak.github.io/Project3/)
 
 ## Emissions Data Visualization
 The goal of this project is to tell a story using data visualizations.
