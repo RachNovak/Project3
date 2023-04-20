@@ -56,7 +56,10 @@ We researched dataset on the following sites:
 
       * Plotly -- Pie chart by country
 
-      * Charts.js -- multi line graph 
+      * Charts.js -- interactive bar chart 
+
+![image](https://user-images.githubusercontent.com/115905663/233501565-16c6852c-f925-4ce3-939e-f157161d5138.png)
+
 
 4. Group presentations
 [Slide Deck](https://docs.google.com/presentation/d/1gvJH5lXP84PoBj8aWUbTHneHJ4zMz_GsvPyWdCW3bXs/edit?usp=sharing)
