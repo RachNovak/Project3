@@ -45,13 +45,31 @@
       <div class="col-md-5">
         <div id="gauge"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <!-- <div id="bubble"></div> -->
-      </div>
-    </div>
+
+      <div class="half-page-line"></div>
+        <h2>Australia's Emissions in the last 20 years</h2>
+
+    
+        <canvas id="myChart"></canvas>
   </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script>
+        const years = [2000, 2004, 2008, 2012, 2016, 2020, 2021];
+        const emissions = ["Coal", "Oil", "Gas", "Cement", "Flaring"];
+  
+        const colors = [
+          "rgba(54, 162, 235, 0.5)",
+          "rgba(255, 206, 86, 0.5)",
+          "rgba(75, 192, 192, 0.5)",
+          "rgba(153, 102, 255, 0.5)",
+          "rgba(255, 159, 64, 0.5)"
+        ];
+  
+        function buildCharts(data) {
+          const ctx = document.getElementById("myChart").getContext("2d")};
+      </script>
+  </html>
   <br>
     <div class="text-container">
       <p>&#128236; Sign our Guestbook! &#128211;</p>
@@ -94,11 +112,9 @@
     <h3>Here are all the latest positive environmental stories</h3>
   <div id="rss-feed">
     <ul id="feed-list">
-
-      <head>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <script>
+          <script>
           $(document).ready(function () {
             $.ajax({
               url: "https://rss.app/feeds/tGJKXZdEBKANLaOR.xml",
@@ -122,8 +138,6 @@
             });
           });
         </script>
-
-      </head>
     </ul>
   </div>
 </div>

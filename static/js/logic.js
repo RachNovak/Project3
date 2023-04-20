@@ -154,32 +154,58 @@ function buildCharts(row) {
 
       Plotly.newPlot("gauge", piedata, layout2);
 
-      // // 1. Create the trace for the bubble chart.
-      // var bubbleChart = [{
-      //   x: keys,
-      //   y: values,
-      //   text: values,
-      //   mode: "markers",
-      //   marker: {
-      //     size: values,
-      //     color: values,
-      //     colorscale: "Electric",
-      //     opacity: 0.7,
-      //   }, 
-      //   type: 'scatter'
-      // }];
-      // // 2. Create the layout for the bubble chart.
-      // var bubbleLayout = {
-      //   title: "CO2 Emissions",
-      //   height: 600, 
-      //   width: 1200,
-      //   xaxis: {title: "Emission Types"},
-      //   hovermode: "closest",
-      //   showlegend:false,
-      //   showgrid:true
-      // };
-      // // 3. Use Plotly to plot the data with the layout.
-      // Plotly.newPlot("bubble", bubbleChart, bubbleLayout);
+      const ctx = document.getElementById('myChart').getContext('2d');
+
+      const chartConfig = {
+        type: 'bar',
+        data: {
+          labels: ['2000', '2005', '2010', '2015', '2020', '2021'],
+          datasets: [
+            {
+              label: 'Coal',
+              data: [185.78, 200.69, 200.53, 174.18, 156.14, 150.95],
+              backgroundColor: '#f44336',
+            },
+            {
+              label: 'Oil',
+              data: [102.33, 116.50, 124.55, 137.62, 135.47, 139.15],
+              backgroundColor: '#2196f3',
+            },
+            {
+              label: 'Gas',
+              data: [46.59, 54.47, 64.26, 72.04, 84.47, 77.24],
+              backgroundColor: '#4caf50',
+            },
+            {
+              label: 'Cement',
+              data: [3.62, 3.66, 3.54, 3.07, 2.82, 2.82],
+              backgroundColor: '#ffeb3b',
+            },
+            {
+              label: 'Flaring',
+              data: [7.95, 6.91, 8.18, 10.82, 17.27, 17.27],
+              backgroundColor: '#9c27b0',
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [
+              {
+                stacked: true,
+              },
+            ],
+            yAxes: [
+              {
+                stacked: true,
+              },
+            ],
+          },
+        },
+      };
+      
+      const myChart = new Chart(ctx, chartConfig);
 
 
 

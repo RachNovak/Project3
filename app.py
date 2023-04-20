@@ -19,7 +19,7 @@ CORS(app)
 ###############################################
 ## declare the connection string specifying the hose name database name, user name and password
 conn_string = "host= 'localhost' dbname= 'project3'\
-user= 'postgres' password= 'UTCamp'"
+user= 'postgres' password= 'Mahyar@378'"
 
 #use connect function to establish the connection to the database
 conn = psycopg2.connect(conn_string)
