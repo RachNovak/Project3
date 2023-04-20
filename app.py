@@ -17,7 +17,7 @@ CORS(app)
 ###############################################
 # Database Setup
 ###############################################
-## declare the connection string specifying the hose name database name, user name and password
+## declare the connection string specifying the host name database name, user name and password
 conn_string = "host= 'localhost' dbname= 'project3'\
 user= 'postgres' password= 'admin'"
 
@@ -58,8 +58,6 @@ def final():
     
    
     return final.to_json(orient = 'records')
-    # return jsonify(total.loc[:, ['country', 'total']])
-    # return jsonify(list(total_dictionary))
 
 
 #Create function for total page
